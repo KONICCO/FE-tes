@@ -1,33 +1,39 @@
-import FrameComponent from "@/pages/seller/Header/FrameComponent";
-import NavigasiSeller from "@/pages/seller/sidebar/NavigasiSeller";
+import Header from "@/components/seller/Header/Header";
+import NavigasiSeller from "@/components/seller/sidebar/NavigasiSeller";
 
+
+function StartSelling() {
+  return <div className="self-stretch bg-white border-primary-grey border-[1px] border-solid box-border flex flex-row items-start justify-between pt-[29px] pb-7 pl-[29px] pr-[31px] max-w-full shrink-0 gap-5 mq1050:flex-wrap">
+  <div className="h-[152px] w-[1040px] relative bg-white border-primary-grey border-[1px] border-solid box-border hidden max-w-full" />
+  <div className="w-[567px] flex flex-col items-start justify-start gap-[20.4px] max-w-full">
+    <div className="relative font-extrabold z-[1] mq450:text-lgi">
+      Start Selling
+    </div>
+    <div className="self-stretch relative text-sm font-semibold text-black z-[1]">
+      Reach millions of customers of the worlds biggest marketplace
+      for gamers and geeks. Verify your account and become a seller
+      now!
+    </div>
+  </div>
+  <div className="w-[250px] flex flex-col items-start justify-start pt-5 px-0 pb-0 box-border text-center text-base text-white">
+    <div className="self-stretch bg-secondary-blue flex flex-row items-start justify-start py-3.5 pl-0 pr-0.5 whitespace-nowrap z-[1]">
+      <div className="h-[50px] w-[250px] relative bg-secondary-blue hidden" />
+      <b className="flex-1 relative z-[1]">Seller Verification</b>
+    </div>
+  </div>
+</div>
+}
 const Dashboard = () => {
   return (
     <div className="w-full relative bg-whitesmoke overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <FrameComponent />
+      <Header />
       <main className="w-[1410px] h-[1172px] flex flex-row items-start justify-start pt-0 pb-[104px] pl-0 pr-5 box-border gap-[50px] max-w-full lg:pb-[68px] lg:box-border mq750:gap-[25px] mq750:pb-11 mq750:box-border mq1050:h-auto mq1050:pl-5 mq1050:box-border">
         <NavigasiSeller />
         <section className="flex-1 flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border max-w-[calc(100%_-_350px)] shrink-0 text-left text-5xl text-primary-black font-nunito-sans lg:pt-8 lg:box-border mq750:pt-[21px] mq750:box-border mq1050:max-w-full">
           <div className="self-stretch flex flex-col items-start justify-start gap-[30px] max-w-full">
-            <div className="self-stretch bg-white border-primary-grey border-[1px] border-solid box-border flex flex-row items-start justify-between pt-[29px] pb-7 pl-[29px] pr-[31px] max-w-full shrink-0 gap-5 mq1050:flex-wrap">
-              <div className="h-[152px] w-[1040px] relative bg-white border-primary-grey border-[1px] border-solid box-border hidden max-w-full" />
-              <div className="w-[567px] flex flex-col items-start justify-start gap-[20.4px] max-w-full">
-                <div className="relative font-extrabold z-[1] mq450:text-lgi">
-                  Start Selling
-                </div>
-                <div className="self-stretch relative text-sm font-semibold text-black z-[1]">
-                  Reach millions of customers of the worlds biggest marketplace
-                  for gamers and geeks. Verify your account and become a seller
-                  now!
-                </div>
-              </div>
-              <div className="w-[250px] flex flex-col items-start justify-start pt-5 px-0 pb-0 box-border text-center text-base text-white">
-                <div className="self-stretch bg-secondary-blue flex flex-row items-start justify-start py-3.5 pl-0 pr-0.5 whitespace-nowrap z-[1]">
-                  <div className="h-[50px] w-[250px] relative bg-secondary-blue hidden" />
-                  <b className="flex-1 relative z-[1]">Seller Verification</b>
-                </div>
-              </div>
-            </div>
+            {/*  */}
+            <StartSelling/>
+            {/*  */}
             <div className="self-stretch bg-white border-primary-grey border-[1px] border-solid box-border flex flex-col items-end justify-start pt-[18px] px-0 pb-6 gap-[51.5px] max-w-full text-lg text-secondary-blue mq750:gap-[26px] mq450:pt-5 mq450:pb-5 mq450:box-border">
               <div className="self-stretch h-[358px] relative bg-white border-primary-grey border-[1px] border-solid box-border hidden" />
               <div className="self-stretch flex flex-col items-start justify-start gap-5">

@@ -1,5 +1,5 @@
-import NavigasiSeller from "@/pages/seller/sidebar/NavigasiSeller";
-import FrameComponent from "@/pages/seller/Header/FrameComponent";
+import NavigasiSeller from "@/components/seller/sidebar/NavigasiSeller";
+import FrameComponent from "@/components/seller/Header/Header";
 import bank from "@/assets/seller/bank-BNI.png";
 import addBank from "@/assets/seller/add-bank.png";
 

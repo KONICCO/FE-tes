@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "grey-2": "#999",
         whitesmoke: {
           "100": "#f9f9f9",
           "200": "#eaeaea",

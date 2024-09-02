@@ -1,6 +1,6 @@
-import FrameComponent from "@/pages/seller/Header/FrameComponent";
+import FrameComponent from "@/components/seller/Header/Header";
 import ContentContainer from "@/pages/seller/IncomeRecords/ContentContainer";
-import NavigasiSeller from "@/pages/seller/sidebar/NavigasiSeller";
+import NavigasiSeller from "@/components/seller/sidebar/NavigasiSeller";
 const HistoryIncome = () => {
   return (
     <div className="w-full relative bg-whitesmoke-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
